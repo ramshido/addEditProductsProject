@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<template class="product-list__template">
+		<li class="product-list__item">
+			<img src="" alt="" class="product-list__image">
+			<span class="product-list__name"></span>
+			<span class="product-list__price"></span>
+			<button class="product-list__button">Добавить в корзину</button>
+		</li>
+	</template>
+
+	<ul class="product-list"></ul>
+
+
+	<div class="product-cart">
+		<template class="product-cart__template">
+			<li class="product-cart__item">
+				<img src="" alt="" class="product-cart__image">
+				<span class="product-cart__name"></span>
+				<div class="product-cart__count">
+					<button class="product-cart__button product-cart__button--minus">-</button>
+					<input type="text" name="product-cart-count" class="product-cart__input" placeholder="0">
+					<button class="product-cart__button product-cart__button--plus">+</button>
+				</div>
+				<span class="product-cart__price"></span>
+			</li>
+		</template>
+
+		<ul class="product-cart__list"></ul>
+
+		<span>Итого:</span>
+		<span class="product-cart__total"><span>0</span> шт.</span>
+		<span class="product-cart__total-price">0 Р</span>
+		<button class="product-cart__btn" id="order-btn">Оформить заказ</button>
+	</div>
+	<script src="js/main.js" type="module"></script>
+</body>
+
+</html>
